@@ -1,0 +1,12 @@
+.next
+node_modules/
+public/
+.env
+.eslintrc.json
+jsconfig.json
+next.config.js
+package-lock.json
+package.json
+README.md
+.prettierrc
+.github

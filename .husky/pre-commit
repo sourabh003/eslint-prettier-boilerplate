@@ -1,0 +1,22 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo 'Code standards check : Running 🔨'
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+        echo '❌ ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        false; 
+)
+
+echo 'Code standards check : Passed ✅'
+
+echo 'Code Formatting : Running 🔨'
+
+# formating with prettier
+npm run format
+
+git add .
+
+echo 'Code Formatting : Completed ✅'
