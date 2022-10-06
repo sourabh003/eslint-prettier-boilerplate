@@ -5,5 +5,11 @@ export default function feature() {
 		console.log('hello');
 	}, []);
 
-	return <div>feature</div>;
+	return (
+		<div>
+			<div>
+				<div>asdfdsf</div>
+			</div>
+		</div>
+	);
 }
